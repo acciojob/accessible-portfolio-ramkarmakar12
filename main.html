@@ -4,21 +4,47 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	    <title>Accessible Portfolio</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
 	<h1>Portfolio</h1>
-	<nav>
-		<img href="googe.com" alt="logo">Link</img>
-		<details>,djfbhg</details>
-		<ul>
-			<li>qqq</li>
-			<li>hafigwar</li>
-			<li>nadfjlhiadgi</li>
-			<li>qeghkrir</li>
-		</ul>
-	</nav>
+	    <!-- Navigation Bar -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Heading -->
+    <header>
+        <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
+    </header>
+
+    <!-- Portfolio Image and Description -->
+    <section id="about">
+        <img src="profile.jpg" alt="Portrait of [Your Name]" role="img">
+        <p>Welcome to my portfolio! I am a passionate developer dedicated to creating inclusive and accessible web solutions.</p>
+    </section>
+
+    <!-- Projects List -->
+    <section id="projects">
+        <h2 role="heading" aria-level="2">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Responsive Web Design</li>
+            <li role="listitem">E-commerce Platform</li>
+            <li role="listitem">Accessibility Enhancement Toolkit</li>
+        </ul>
+    </section>
+
+    <!-- Footer/Contact Section -->
+    <footer id="contact">
+        <h2 role="heading" aria-level="2">Contact</h2>
+        <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    </footer>
     <script type="text/javascript" src="./script.js">
 </script>
 
